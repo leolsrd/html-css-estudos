@@ -1,0 +1,23 @@
+.emCartas {
+  color: darkred;
+}
+
+.vaiEstrear {
+  color: darkblue;
+}
+
+.removeUnderline {
+  text-decoration: none;
+}
+
+.colorLinkNivel2 {
+  color: seagreen;
+}
+
+p {
+  font-size: 20px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}

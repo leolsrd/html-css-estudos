@@ -1,0 +1,19 @@
+div {
+  background: #aaa;
+  width: 140px; /* Largura */
+  height: 80px; /* Altura */
+  padding: 20px; /* espaço entre a borda interna e o texto interno*/
+  border: 10px solid #111;
+  margin: 30px; /* Margem entre a parte externa e outros elementos */
+}
+
+body {
+  margin: 0px;
+}
+
+h1 {
+  background: #84e;
+  padding: 20px;
+  border: 4px solid #111;
+  margin: 30px;
+}
