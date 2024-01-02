@@ -1,0 +1,49 @@
+<!-- Aula 0501 - Unidades 1 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel e REM</title>
+  <style>
+    a {
+      text-decoration: none;
+      color: white;
+      background-color: darkblue;
+      display: inline-block;
+    }
+
+    p {
+      background-color: lightblue;
+    }
+
+    .px {
+      font-size: 24px;
+      padding: 16px 32px;
+    }
+
+    .rem {
+      /*  1 rem é unidade de medida relativa a raiz que no caso é o html
+          Por padrão 1 rem equivale a 16px que é o padrão quando cria uma página html
+      */
+      font-size: 1.5rem;
+      padding: 1rem 2rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <p class="px">Esse é um parágrafo</p>
+    <a class="px" href="#">Clique aqui</a>
+  </div>
+
+  <div>
+    <p class="rem">Esse é um parágrafo</p>
+    <a class="rem" href="#">Clique aqui</a>
+  </div>
+</body>
+
+</html>
