@@ -1,0 +1,60 @@
+<!-- Aula 0505 - Pseudo Elements -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula 0505 - Pseudo Elements</title>
+
+  <style>
+    /* h1 {
+      position: relative
+    } */
+
+    h1::after {
+      content: "";
+      display: block;
+      width: 40px;
+      height: 4px;
+      background-color: #caf;
+      /* position: absolute;
+      top: 20px;
+      z-index: -1; */
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    li {
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+    }
+
+    li::before {
+      content: "";
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background: linear-gradient(#caf, #fff);
+      border: 2px solid #caf;
+      margin-right: 10px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Nossos Produtos</h1>
+
+  <ul>
+    <li>Sobre</li>
+    <li>Produtos</li>
+    <li>Contato</li>
+  </ul>
+</body>
+
+</html>
