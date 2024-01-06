@@ -1,4 +1,4 @@
-<!-- Aula 0504 - Pseudo Classes 1-->
+<!-- Aula 0505 - Pseudo Elements -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -6,110 +6,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>0504 - Pseudo Classes</title>
+  <title>Aula 0505 - Pseudo Elements</title>
 
   <style>
-    a {
-      display: inline-block;
-      padding: 1rem 2rem;
-      font-size: 1.5rem;
-      font-family: Arial, Helvetica, sans-serif;
-      text-decoration: none;
-      background-color: #caf;
-      color: #217;
-    }
-
-    a:hover {
-      background-color: #adf;
-      color: #147;
-    }
-
-    a:focus {
-      background-color: #cfa;
-      color: #371;
-      outline: none;
-    }
-
-    a:active {
-      background-color: #ffa;
-      color: #761;
-    }
-
-    /* Trabalhando com as listas */
-    /* Seleciona o primeiro item da lista e aplica o estilo */
-    .lista-1 li:first-child {
-      background-color: #caf;
-    }
-
-    /* Seleciona o último item da lista e aplica o estilo */
-    .lista-1 li:last-child {
-      background-color: #ffa;
-    }
-
-    /* Seleciona o item específico informando sua posição e aplica o estilo */
-    /* nth-child() é uma função */
-    .lista-1 li:nth-child(3) {
-      background-color: #cfa;
-    }
-
-    /* Seleciona os itens pares e aplica o estilo */
-    /* nth-child() é uma função */
-    .lista-2 li:nth-child(even) {
-      background-color: #cfa;
-    }
-
-    /* Seleciona os itens impares e aplica o estilo */
-    /* nth-child() é uma função */
-    .lista-2 li:nth-child(odd) {
-      background-color: #761;
-    }
-
-    /* Seleciona itens a cada x elementos da lista e aplica o estilo */
-    /* nth-child() é uma função */
-    /* .lista-2 li:nth-child(2n) {
-      background-color: #761;
+    /* h1 {
+      position: relative
     } */
 
-    /* Seletor que nega algo e os que foram negados no caso eu estou aplicando o estilo */
-    /* Neste caso eu estou negando o primeiro e o último item da lista com o
-    first e last-child e estou negando a classe terceiro que adicionei na lista.
-     */
-    .lista-3 li:not(:first-child, :last-child, .terceiro) {
+    h1::after {
+      content: "";
+      display: block;
+      width: 40px;
+      height: 4px;
       background-color: #caf;
+      /* position: absolute;
+      top: 20px;
+      z-index: -1; */
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    li {
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+    }
+
+    li::before {
+      content: "";
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background: linear-gradient(#caf, #fff);
+      border: 2px solid #caf;
+      margin-right: 10px;
+      border-radius: 50%;
     }
   </style>
 </head>
 
 <body>
-  <a href="#">Clique Aqui</a>
+  <h1>Nossos Produtos</h1>
 
-  <ol class="lista-1">
-    <li>Primeiro elemento</li>
-    <li>Segundo elemento</li>
-    <li>Terceiro elemento</li>
-    <li>Quarto elemento</li>
-    <li>Quinto elemento</li>
-  </ol>
-
-  <ol class="lista-2">
-    <li>Primeiro elemento</li>
-    <li>Segundo elemento</li>
-    <li>Terceiro elemento</li>
-    <li>Quarto elemento</li>
-    <li>Quinto elemento</li>
-    <li>Sexto elemento</li>
-    <li>Sétimo elemento</li>
-    <li>Oitavo elemento</li>
-  </ol>
-
-  <ol class="lista-3">
-    <li>Primeiro elemento</li>
-    <li>Segundo elemento</li>
-    <li class="terceiro">Terceiro elemento</li>
-    <li>Quarto elemento</li>
-    <li>Quinto elemento</li>
-  </ol>
-
+  <ul>
+    <li>Sobre</li>
+    <li>Produtos</li>
+    <li>Contato</li>
+  </ul>
 </body>
 
 </html>
