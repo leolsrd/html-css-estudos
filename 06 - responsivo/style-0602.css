@@ -1,0 +1,37 @@
+img {
+  max-width: 100%;
+  display: block;
+}
+
+div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+h1 {
+  grid-column: 1/-1;
+}
+
+@media (max-width: 600px) {
+  div {
+    grid-template-columns: 1fr;
+  }
+  img {
+    display: none;
+  }
+  h1 {
+    text-align: center;
+    background-color: #98e;
+  }
+}
+
+@media (min-width: 600px) {
+  h1 {
+    text-align: center;
+    background-color: #98e;
+  }
+  p {
+    font-size: 150%;
+  }
+}
