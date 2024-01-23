@@ -6,7 +6,6 @@ body {
   justify-items: center;
   margin-top: 60px;
   background-color: #f7f7f7;
-  /* background-color: blue; */
 }
 
 img {
@@ -221,7 +220,6 @@ p {
   }
 
   .menu {
-    /* grid-column: 1fr 1fr; */
     grid-template-columns: 1fr 1fr;
   }
   .informacao {
@@ -251,8 +249,32 @@ p {
   }
 }
 
-/* @media (max-width: 633px) {
-  .vantagens {
-    text-align: center;
+/* Ajuste para celuar */
+@media (max-width: 413px) {
+  body {
+    overflow-x: hidden;
   }
-} */
+
+  .header {
+    gap: 10px;
+  }
+
+  .menu {
+    margin-top: 10px;
+  }
+
+  .menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .menu > li > a {
+    padding: 0.6rem 6.4rem;
+  }
+
+  .container {
+    max-width: 375px;
+    margin-top: -20px;
+  }
+}
