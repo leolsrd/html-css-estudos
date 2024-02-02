@@ -1,0 +1,3 @@
+Instalando um pacote globalmente => npm install -g nome-do-programa (-g é para instalar globalmente)
+
+Comando para minificar e criar um css otimizado => cleancss -o nome-do-arquivo.min.css nome-do-arquivo-original
