@@ -1,0 +1,36 @@
+/* Outros seletores */
+[required] {
+  border: 2px solid tomato;
+  margin: 5px;
+  font-size: 1.2rem;
+}
+
+[href="#contato"] {
+  border: 2px solid greenyellow;
+  margin: 5px;
+  font-size: 1.2rem;
+}
+
+/* Seletor para pegar a palavra ao final */
+[href$=".com"] {
+  border: 2px solid blue;
+  margin: 5px;
+  font-size: 1.2rem;
+}
+
+section > h2 {
+  color: tomato;
+}
+
+p {
+  margin: 0px;
+}
+
+article {
+  background-color: lightgreen;
+  padding: 10px;
+}
+
+p + p {
+  margin-top: 10px;
+}

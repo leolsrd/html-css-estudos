@@ -1,0 +1,17 @@
+/* Propriedades customizadas (Criando variáveis) */
+:root {
+  /* Criando as variavéis e seus valores */
+  --cor-primaria: #84e;
+  --borda: 4px solid #f6f6f6af;
+  --fonte-grande: 3rem;
+}
+
+h2 {
+  font-size: var(--fonte-grande);
+  color: var(--cor-primaria);
+}
+
+p {
+  font-size: calc(var(--fonte-grande) / 2);
+  color: var(--cor-primaria);
+}
