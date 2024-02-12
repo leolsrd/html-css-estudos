@@ -1,4 +1,12 @@
 @import url("./global/global.css");
+
+/* Tipografia */
+@import url("./utilidades/tipografia.css");
+
+/* Cores */
+@import url("./utilidades/cores.css");
+
+/* Header */
 @import url("./global/header.css");
 
 /* Componentes */
