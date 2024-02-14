@@ -9,6 +9,9 @@
 /* Header */
 @import url("./global/header.css");
 
+/* Footer */
+@import url("./global/footer.css");
+
 /* Componentes */
 @import url("./utilidades/componentes.css");
 
