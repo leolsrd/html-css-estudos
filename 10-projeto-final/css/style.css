@@ -30,5 +30,8 @@
 @import url("./bicicletas/bicicletas-lista.css");
 @import url("./bicicletas/bicicletas.css");
 
+/* Bicicleta */
+@import url("./bicicleta/bicicleta.css");
+
 /* Termos */
 @import url("./termos/termos.css");
